@@ -1,3 +1,4 @@
+import 'package:catchup_app/parceria/item_parceria.dart';
 import 'package:flutter/material.dart';
 
 class PageParceria extends StatelessWidget {
@@ -20,11 +21,12 @@ class PageParceria extends StatelessWidget {
                   Icon(
                     Icons.list,
                     size: 35,
-                  )
+                  ),
                 ],
               ),
             ),
           ),
+          ItemParceria('assets/images/logo_parceria.png')
         ],
       ),
     );

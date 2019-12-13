@@ -43,6 +43,7 @@ flutter:
   assets:
     - assets/images/image_feed.png
     - assets/images/image_avisos.png
+    - assets/images/logo_parceria.png
   # To add assets to your application, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg
