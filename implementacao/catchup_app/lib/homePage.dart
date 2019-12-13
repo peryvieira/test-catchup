@@ -2,6 +2,8 @@ import 'package:catchup_app/bottomNavigation.dart';
 import 'package:flutter/material.dart';
 import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
 
+import 'feed/page_feed.dart';
+
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -18,9 +20,7 @@ class _HomePageState extends State<HomePage> {
               new Container(
                 color: Colors.white,
               ),
-              new Container(
-                color: Colors.white,
-              ),
+              new PageFeed(),
               new Container(
                 color: Colors.white,
               ),
