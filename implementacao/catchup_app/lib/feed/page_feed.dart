@@ -14,16 +14,25 @@ class PageFeed extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: <Widget>[
-          PostFeed(
-              "Raimundo Nonato Sousa",
-              "122",
-              'assets/images/image_feed.png',
-              curtidas,
-              "asidhisa dsoajdihd asdiosakldmiqhd sadknsoiqhdiasdjlsakdn a´pfksapdsan dqouhdaisd asashdisad asmdkla ",
-              "30 de Nov de 2019"),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            PostFeed(
+                "Raimundo Nonato Sousa",
+                "122",
+                'assets/images/image_feed.png',
+                curtidas,
+                "asidhisa dsoajdihd asdiosakldmiqhd sadknsoiqhdiasdjlsakdn a´pfksapdsan dqouhdaisd asashdisad asmdkla ",
+                "30 de Nov de 2019"),
+            PostFeed(
+                "Raimundo Nonato Sousa",
+                "122",
+                'assets/images/image_feed.png',
+                curtidas,
+                "asidhisa dsoajdihd asdiosakldmiqhd sadknsoiqhdiasdjlsakdn a´pfksapdsan dqouhdaisd asashdisad asmdkla ",
+                "30 de Nov de 2019"),
+          ],
+        ),
       ),
     );
   }
