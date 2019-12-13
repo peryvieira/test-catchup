@@ -24,10 +24,14 @@ class _PostAvisosState extends State<PostAvisos> {
                     image: DecorationImage(
                         image: new AssetImage(widget.pathImageAvisos),
                         fit: BoxFit.fill)))),
-        Text(widget.tituloAvisos),
+        Container(
+            alignment: Alignment.topLeft,
+            child: Text(widget.tituloAvisos,
+                style: Theme.of(context).textTheme.title)),
         Padding(
             padding: const EdgeInsets.only(bottom: 36.0),
-            child: Text(widget.conteudoAvisos))
+            child: Text(widget.conteudoAvisos,
+                style: Theme.of(context).textTheme.body1))
       ],
     );
   }

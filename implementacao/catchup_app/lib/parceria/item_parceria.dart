@@ -19,8 +19,8 @@ class _ItemParceriaState extends State<ItemParceria> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Container(
-                height: 125,
-                width: 125,
+                height: 130,
+                width: 130,
                 decoration: new BoxDecoration(
                     borderRadius: BorderRadius.all(Radius.circular(8)),
                     image: DecorationImage(
@@ -35,14 +35,14 @@ class _ItemParceriaState extends State<ItemParceria> {
                       Container(
                         child: Text(
                           "Multicar DG.",
-                          style: TextStyle(fontSize: 18),
+                          style: Theme.of(context).textTheme.title,
                         ),
                       ),
                       SizedBox(height: 3),
                       Container(
                         child: Text(
                           "15% alinhamento, balanceamento, troca de óleo e serviços técnicos.",
-                          style: TextStyle(fontSize: 13),
+                          style: Theme.of(context).textTheme.body1,
                         ),
                       ),
                       SizedBox(height: 3),
@@ -59,7 +59,7 @@ class _ItemParceriaState extends State<ItemParceria> {
                         child: Text(
                           "AV. JERÔNIMO DE ALBUQUERQUE, VINHAIS",
                           style: TextStyle(
-                              fontSize: 14,
+                              fontSize: 13,
                               color: Color.fromRGBO(191, 200, 203, 1)),
                         ),
                       ),

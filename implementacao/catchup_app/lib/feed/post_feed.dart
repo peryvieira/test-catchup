@@ -25,8 +25,9 @@ class _PostFeedState extends State<PostFeed> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Text(widget.usuario),
-              Text("Filial " + widget.filial)
+              Text(widget.usuario, style: Theme.of(context).textTheme.title),
+              Text("Filial " + widget.filial,
+                  style: Theme.of(context).textTheme.subtitle)
             ],
           ),
         ),
@@ -59,7 +60,7 @@ class _PostFeedState extends State<PostFeed> {
         ),
         Padding(
           padding: const EdgeInsets.all(16.0),
-          child: Text(widget.legenda),
+          child: Text(widget.legenda, style: Theme.of(context).textTheme.body1),
         ),
         Padding(
             padding: const EdgeInsets.only(bottom: 10, left: 16),
