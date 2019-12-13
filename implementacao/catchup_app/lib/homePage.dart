@@ -1,3 +1,4 @@
+import 'package:catchup_app/avisos/page_avisos.dart';
 import 'package:catchup_app/bottomNavigation.dart';
 import 'package:flutter/material.dart';
 import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
@@ -21,9 +22,7 @@ class _HomePageState extends State<HomePage> {
                 color: Colors.white,
               ),
               new PageFeed(),
-              new Container(
-                color: Colors.white,
-              ),
+              new PageAvisos(),
               new Container(
                 color: Colors.white,
               ),
