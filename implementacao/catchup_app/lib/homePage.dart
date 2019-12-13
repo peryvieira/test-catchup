@@ -1,6 +1,7 @@
 import 'package:catchup_app/avisos/page_avisos.dart';
 import 'package:catchup_app/bottomNavigation.dart';
 import 'package:catchup_app/parceria/page_parceria.dart';
+import 'package:catchup_app/upload/page_upload.dart';
 import 'package:flutter/material.dart';
 import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
 
@@ -19,9 +20,7 @@ class _HomePageState extends State<HomePage> {
         child: new Scaffold(
           body: TabBarView(
             children: [
-              new Container(
-                color: Colors.white,
-              ),
+              new PageUpload(),
               new PageFeed(),
               new PageAvisos(),
               new PageParceria()
