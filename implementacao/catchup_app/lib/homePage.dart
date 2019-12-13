@@ -1,5 +1,6 @@
 import 'package:catchup_app/bottomNavigation.dart';
 import 'package:flutter/material.dart';
+import 'package:bubble_tab_indicator/bubble_tab_indicator.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -50,6 +51,11 @@ class _HomePageState extends State<HomePage> {
               ],
               labelColor: Color.fromRGBO(0, 35, 47, 1),
               unselectedLabelColor: Color.fromRGBO(191, 200, 203, 1),
+              indicator: BubbleTabIndicator(
+                indicatorHeight: 35.0,
+                indicatorColor: Colors.blueGrey,
+                tabBarIndicatorSize: TabBarIndicatorSize.tab,
+              ),
             ),
             backgroundColor: Colors.white,
           ),
